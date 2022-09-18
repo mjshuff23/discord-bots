@@ -2,7 +2,7 @@
   "compilerOptions": {
       "target": "ESNext",
       "module": "commonjs",
-      "rootDir": "typescript-bots/src",
+      "rootDir": "src",
       "outDir": "./dist/",
       "strict": true,
       "moduleResolution": "node",
@@ -15,19 +15,16 @@
       "forceConsistentCasingInFileNames": true,
       "removeComments": true,
       "typeRoots": [
-          "typescript-bots/node_modules/@types"
+          "node_modules/@types"
       ],
       "sourceMap": false,
       "baseUrl": "./"
   },
-  "files": [
-      "typescript-bots/src/*.ts"
-  ],
   "include": [
-      "./**/*.ts"
+      "./**/*.ts",
   ],
   "exclude": [
-      "typescript-bots/node_modules",
+      "node_modules",
       "dist"
   ],
 }

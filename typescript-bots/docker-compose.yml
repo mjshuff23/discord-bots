@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  bot:
+    container_name: discord_bot
+    image: typescript-bot
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
